@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Doble Smash",
+        "price": 2200.0,
+        "description": "Imaginá la sensación del clásico Doble Smash. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, lechuga y tomate. ¿Listo? Ahora duplicá esa sensación.",
+        "img": "./imgs/hamburger.png",
+        "category": "Hamburguesas",
+        "stock": 100
+    },
+    {
+        "id": 2,
+        "name": "Triple King",
+        "price": 1800.0,
+        "description": "Quizás sean de las hamburguesas triples de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.",
+        "img": "./imgs/triple.png",
+        "category": "Hamburguesas",
+        "stock": 100
+    },
+    {
+        "id": 3,
+        "name": "Magnifica",
+        "price": 2500.0,
+        "description": "En un mundo donde todos buscan lo nuevo todo el tiempo, la Magnifica viene a rectificar lo bueno de ser clásico. Doble carne, queso cheddar, pepino y cebolla, acompañados de kétchup, mostaza y mayonesa.",
+        "img": "./imgs/magnifica.png",
+        "category": "Hamburguesas",
+        "stock": 100
+    },
+    {
+        "id": 4,
+        "name": "Nuggets",
+        "price": 1000.0,
+        "description": "Diez piezas del mejor pollo rebozado sólo para vos. Comelas como quieras: con salsas o solas; todas son igual de deliciosas!",
+        "img": "/imgs/nuggets.png",
+        "category": "Nuggets",
+        "stock": 100
+    },
+    {
+        "id": 5,
+        "name": "Coca Cola",
+        "price": 600.0,
+        "description": "Burbujas contra el calor, contra la sed, contra el aburrimiento. Si tus comidas llevan gaseosa, están listas para enfrentar lo que sea",
+        "img": "/imgs/cocacola.png",
+        "category": "Bebidas",
+        "stock": 100
+    },
+    {
+        "id": 6,
+        "name": "Fanta",
+        "price": 600.0,
+        "description": "Burbujas contra el calor, contra la sed, contra el aburrimiento. Si tus comidas llevan gaseosa, están listas para enfrentar lo que sea",
+        "img": "/imgs/fanta.png",
+        "category": "Bebidas",
+        "stock": 100
+    },
+    {
+        "id": 7,
+        "name": "Sprite",
+        "price": 600.0,
+        "description": "Burbujas contra el calor, contra la sed, contra el aburrimiento. Si tus comidas llevan gaseosa, están listas para enfrentar lo que sea",
+        "img": "/imgs/sprite.png",
+        "category": "Bebidas",
+        "stock": 100
+    },
+    {
+        "id": 8,
+        "name": "Agua sin gas",
+        "price": 400.0,
+        "description": "La opción ideal para refrescar todas tus comidas.",
+        "img": "/imgs/agua.png",
+        "category": "Bebidas",
+        "stock": 100
+    }
+]
