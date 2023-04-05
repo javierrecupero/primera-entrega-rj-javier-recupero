@@ -1,45 +1,45 @@
 import { useEffect, useState } from 'react'
-import { pedirDatos } from '../../helpers/pedirDatos'
 import ItemList from '../ItemList/ItemList'
 import './ItemListContainer.css'
 import { useParams } from 'react-router-dom'
-
+import Loader from '../Loader/Loader'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../firebase/config'
 
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
-
+    console.log(productos)
     const { categoryId } = useParams()
-    console.log(categoryId)
 
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
+        const productosRef = collection(db, "productos")
+        const q = categoryId 
+                    ? query(productosRef, where("category", "==", categoryId))
+                    : productosRef
+        getDocs(q)
             .then((res) => {
-                if (categoryId) {
-                    setProductos( res.filter((prod) => prod.category === categoryId) )
-                } else {
-                    setProductos(res)
-                }
+                setProductos( res.docs.map((doc) => {
+                    return {
+                        id: doc.id,
+                        ...doc.data()
+                    }
+                }))
             })
-            .catch((error) => {
-                console.log(error)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
+            .finally(() => setLoading(false))
+        
     }, [categoryId])
 
     return (
         <div className="container my-5">
-
-            {
-                loading
-                    ? <h2>🍔🍔🍔</h2>
-                    : <ItemList items={productos}/>
+            {loading
+                ? <Loader />
+                : <ItemList items={productos} />
             }
+
         </div>
     )
 }
