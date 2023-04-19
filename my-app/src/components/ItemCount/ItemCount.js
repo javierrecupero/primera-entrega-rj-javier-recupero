@@ -1,5 +1,4 @@
 
-
 const ItemCount = ({stock, cantidad, setCantidad, agregar}) => {
 
     const handleRestar = () => {
