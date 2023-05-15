@@ -12,7 +12,7 @@ const Cart = () => {
             <div className="container my-5">
                 <h2>No hay productos agregados</h2>
                 <hr/>
-                <Link className="btn btn-primary" to="/">↩Volver</Link>
+                <Link className="btn btn-danger" to="/">Volver</Link>
             </div>
         )
     }
@@ -39,6 +39,7 @@ const Cart = () => {
 ↩️
             <h3>Total: {totalCarrito()}</h3>
             <button onClick={vaciarCarrito} className="btn btn-danger m-2">Vaciar carrito</button>
+            <Link to="/checkout" className="btn btn-success m-2">Terminar mi compra</Link>
         </div>
     )
 }

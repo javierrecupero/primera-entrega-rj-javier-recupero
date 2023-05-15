@@ -49,11 +49,10 @@ const LoginScreen = () => {
                         placeholder='Contraseña'
                     />
 
-                    <button className='btn btn-primary' type='submit'>Ingresa</button>
-                    <Link to={"/register"}>Registrate</Link>
+                    <button className='btn btn-danger' type='submit'>Ingresa</button>
+                    <Link className='btn-btn-danger' to={"/register"}>Registrate</Link>
                 </form>
-                <button className='btn btn-outline-primary' onClick={googleLogin}>Ingresar con Chrome</button>
-                <button className='btn btn-outline-primary' onClick={googleLogin}>Ingresar con Safari</button>
+                <button className='btn btn-outline-danger' onClick={googleLogin}>Ingresar con Google</button>
             </div>
         </div>
     )
